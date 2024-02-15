@@ -46,6 +46,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.zegocloud.uikit.plugin.invitation.ZegoInvitationType;
 import com.zegocloud.uikit.prebuilt.call.ZegoUIKitPrebuiltCallConfig;
 import com.zegocloud.uikit.prebuilt.call.config.ZegoMenuBarButtonName;
@@ -78,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); // keeps screen on
 
+
         findViewById(R.id.cell1).setOnClickListener(v -> {
             Intent intent = new Intent(this, CallActivity.class);
             startActivity(intent);
@@ -109,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
         }, 1000);
 
         findViewById(R.id.btn_weather).setOnClickListener(v -> {
-            Intent intent = new Intent(this, UploadSchedule.class);
+            /* could be UploadScheduleActivity */
+            Intent intent = new Intent(this, SendMessageActivity.class);
             startActivity(intent);
         });
     }
