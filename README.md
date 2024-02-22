@@ -19,9 +19,11 @@ A few features require Wi-Fi connection.
 3. Run the app
 ## How to run the code in Android Studio?
 Send an email to info@digitaltechcare.tech to obtain API Keys
-1. Download Android Studio
-2. Create a virtual tablet device
-3. Click on Run
+1. Clone repo: https://github.com/haydenhuyp/DigitalTechCare_Caregiver.git
+3. Download Android Studio
+4. Import project to Android Studio
+5. Create a virtual tablet device
+6. Click on Run
 ![Alt text](https://forthebadge.com/images/badges/made-with-java.png)
 ![Alt text](https://forthebadge.com/images/badges/built-for-android.png)
 ![Alt text](https://forthebadge.com/images/badges/built-with-love.png)
