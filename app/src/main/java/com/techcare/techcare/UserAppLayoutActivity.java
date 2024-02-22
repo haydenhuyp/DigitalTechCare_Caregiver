@@ -86,6 +86,11 @@ public class UserAppLayoutActivity extends AppCompatActivity {
         findViewById(R.id.btnCallUserAppLayout).setOnClickListener(v -> {
 
         });
+
+        findViewById(R.id.btnMessageUserAppLayout).setOnClickListener(v -> {
+            Intent intent = new Intent(this, SendMessageActivity.class);
+            startActivity(intent);
+        });
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {

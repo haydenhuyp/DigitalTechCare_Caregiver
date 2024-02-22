@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); // keeps screen on
 
-
         findViewById(R.id.cell1).setOnClickListener(v -> {
             Intent intent = new Intent(this, CallActivity.class);
             startActivity(intent);
@@ -109,12 +108,6 @@ public class MainActivity extends AppCompatActivity {
                 handler.postDelayed(this, 1000);
             }
         }, 1000);
-
-        findViewById(R.id.btn_weather).setOnClickListener(v -> {
-            /* could be UploadScheduleActivity */
-            Intent intent = new Intent(this, SendMessageActivity.class);
-            startActivity(intent);
-        });
     }
 
     private void startCallInvitationService(){

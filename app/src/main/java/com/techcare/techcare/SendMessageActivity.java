@@ -28,34 +28,10 @@ public class SendMessageActivity extends AppCompatActivity {
             String message = ((EditText) findViewById(R.id.txtMessage)).getText().toString();
             FirebaseFirestore db = FirebaseFirestore.getInstance();
             DocumentReference docRef = db.collection("messages").document("message");
-            docRef.update("content", message)
-                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            Log.d(TAG, "DocumentSnapshot successfully updated!");
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Log.w(TAG, "Error updating document", e);
-                        }
-                    });
+            docRef.update("content", message);
             // update isShown to false
-            docRef.update("isShown", false)
-                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            Log.d(TAG, "DocumentSnapshot successfully updated!");
-                            Toast.makeText(SendMessageActivity.this, "Message Sent", Toast.LENGTH_SHORT).show();
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Log.w(TAG, "Error updating document", e);
-                        }
-                    });
+            docRef.update("isShown", false);
+            Toast.makeText(SendMessageActivity.this, "Message Sent", Toast.LENGTH_SHORT).show();
         });
 
         // btnBack goes back to the previous activity

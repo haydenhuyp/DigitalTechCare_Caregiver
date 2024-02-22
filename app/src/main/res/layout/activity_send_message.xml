@@ -10,26 +10,26 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="68dp"
         android:text="Enter Your Message"
-        android:textSize="30sp"
         android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtMessage"
-        android:layout_width="237dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="92dp"
+        android:layout_width="331dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="112dp"
         android:height="20dp"
         android:ems="10"
+        android:hint="Enter Your Message"
         android:inputType="text"
-        android:text="Message"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -37,9 +37,12 @@
         android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="@color/primary"
         android:text="Send"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtMessage" />
 
@@ -47,10 +50,13 @@
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="@color/grey"
         android:text="Back"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSend" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMessage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

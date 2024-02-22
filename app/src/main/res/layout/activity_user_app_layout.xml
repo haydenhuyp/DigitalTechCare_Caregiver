@@ -244,6 +244,7 @@
                 android:backgroundTint="@color/primary" />
 
             <Button
+                android:id="@+id/btnMessageUserAppLayout"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
